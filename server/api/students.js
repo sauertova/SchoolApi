@@ -14,7 +14,7 @@ router.get('/', async (req,res,next) =>{
     }
 });
 
-//localhost:1338/api/students/id
+//Get single student localhost:1338/api/students/id
 router.get('/:id', async (req,res,next) => {
     try {
         const {id} = req.params; //const id  = req.params.id
@@ -24,4 +24,6 @@ router.get('/:id', async (req,res,next) => {
         console.error(err);
         res.status(500).send('Server Error with single student')
     }
-})
+});
+
+//Try the post, put and delete routes (homework) --recreate this express api called practiceSchoolApi
