@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-
-const PORT = 1338;
+module.exports = app;
 
 //Logging middleware
 app.use(morgan('dev'));
@@ -15,6 +14,3 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500).send(err.message)
 });
 
-app.listen(PORT, () => {
-    console.log(`listening to some very cool music on port ${PORT}`);
-});
