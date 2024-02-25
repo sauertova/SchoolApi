@@ -6,7 +6,8 @@ module.exports = app;
 //Logging middleware
 app.use(morgan('dev'));
 
-//Add in routes here
+//Base route here
+app.use('/api', require('./api'));
 
 
 app.use((err, req, res, next) => {
