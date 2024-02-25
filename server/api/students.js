@@ -26,4 +26,4 @@ router.get('/:id', async (req,res,next) => {
     }
 });
 
-//Try the post, put and delete routes (homework) --recreate this express api called practiceSchoolApi
+//Try the post, put and delete routes (homework) --recreate this express api called practiceSchoolApi--upload to github and canvas by sunday morning
