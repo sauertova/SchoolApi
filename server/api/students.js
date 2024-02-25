@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const {pool} = require('../db/index')
+module.exports = router;
 
 //Route
 router.get('/', async (req,res,next) =>{

@@ -24,6 +24,6 @@ async function seed() {
     }
 }
 
-seed();
+//seed();
 
 module.exports = { pool };

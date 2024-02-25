@@ -1,8 +1,10 @@
 const router = require('express').Router();
-module.export = router;
+module.exports = router;
 
 router.use('/students', require('./students'));
 
 router.use((req, res, next) => {
-    const error = new Error ('Not Found')
-})
+    const error = new Error ('Not Found');
+    error.status = 404;
+    next(error);
+});
