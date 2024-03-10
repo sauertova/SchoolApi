@@ -1,7 +1,10 @@
 import React from 'react'
+import AllStudents from './AllStudents'
 
 const App = () => {
-    return <div>In the App component</div>
+    return <div>
+        <AllStudents />
+    </div>
 };
 
 export default App;
